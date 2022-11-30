@@ -24,7 +24,7 @@ function buttonCapturar(){
     producto.nombre = document.getElementById('inputProducto').value.toUpperCase();
     producto.descripcion = document.getElementById('inputDescripcion').value.toUpperCase();
 
-    if(producto.nombre.trim() != '' && producto.descripcion.trim() != '')
+    if(producto.nombre.trim() !== '' && producto.descripcion.trim() !== '')
     {
         localStorage.setItem(tamDatos, JSON.stringify(producto));    
         actualizaTabla();        
