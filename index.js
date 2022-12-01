@@ -92,6 +92,9 @@ function actualizaTabla()
         contHTML = creaTablaDinamica(contHTML);
         document.getElementById('tablaContenido').innerHTML = contHTML;
     }    
+    else{
+        document.getElementById('tablaContenido').innerHTML = "<h1>No hay elementos</h1>";
+    }
 }
 
 /**
